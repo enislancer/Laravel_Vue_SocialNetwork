@@ -1,0 +1,31 @@
+{
+  "welcome": "Willkommen",
+  "form": {
+    "name" :  "Benutzername",
+    "email" :  "Mail",
+    "password" :  "Passwort",
+
+    "error" :
+    {
+      "name" : {"exists": "Benutzername existiert"},
+      "mail" : {"exists": "Mail existiert bereits"}
+    },
+    "login" : "Anmelden",
+    "register" : "Registrieren",
+    "abort" : "Abbruch",
+    "delete" : "Löschen",
+    "edit" : "Bearbeiten",
+    "save" : "Speichern",
+    "avatar":{
+      "upload" : "Pick profile Picture"
+    },
+    "background":{
+      "upload" : "Hintergrund ändern"
+    }
+
+  },
+  "permalink": "permalink",
+  "Share" : "Teilen",
+  "Comment" : "Kommentieren"
+
+}

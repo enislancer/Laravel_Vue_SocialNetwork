@@ -1,0 +1,175 @@
+@import 'color';
+@import 'fonts';
+@import 'grid';
+@import 'animation';
+.streamitem
+{
+  padding-top: 1em;
+}
+
+.card{
+
+  background-color: $color3;
+  overflow: hidden;
+  word-break: word-break;
+
+  padding-top: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  header{
+    font-size: 2em;
+    color:$color2;
+  }
+  author{
+    color:$color2;
+  }
+  picture{
+
+    img{
+      width:40px;
+      height:40px;
+      border-radius: 50px;
+    }
+  }
+}
+.profile{
+    .center{
+      text-align: center;
+    }
+
+    h2{
+      background-color: rgb(234,234,234,0.4);
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+
+    min-height:400px;
+    background-position: center;
+    background-size: cover;
+    &.settings{
+
+      height:auto;
+
+    }
+
+    #avatar{
+      margin-top:2em;
+      display: inline-block;
+      width:100px;
+      height:100px;
+      background-position: center;
+      background-size: contain;
+      border-radius: 50px;
+    }
+
+}
+
+.action{
+  .col-lg-4{
+    text-align: center;
+    font-size: 0.5em;
+  }
+  .close{
+    margin-left:3em;
+  }
+  .icon-beer:before {
+
+      width: 1.6em;
+  }
+  .icon-coffee:before {
+      width: 1.4em;
+  }
+  .icon-like:before {
+    width: 1.4em;
+  }
+  button{
+    background-color: inherit;
+    margin-bottom:  1em;
+    transition: all .2s ease-in-out;
+    box-shadow: none;
+    &:hover{
+      text-decoration: none;
+      transform: scale(1.1);
+
+    }
+    &:active{
+      color:$color2;
+      border: none;
+      outline: none;
+    }
+    @media screen and (max-width: $grid-mobile-breakpoint) {
+      margin-bottom:  0.5em;
+    }
+  }
+
+}
+
+.editor-container{
+  padding: 2em;
+  z-index:9999;
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    padding:  0em;
+    padding-top:1em;
+    padding-bottom:1em;
+  }
+}
+.editor{
+  width: 100%;
+  background-color: $color1;
+  padding: 1em;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: $grid-mobile-breakpoint) {
+    min-height:150px;
+    padding: 0em;
+    margin:0em;
+  }
+  border: 1px #ccc solid;
+  code{
+   background-color:   $color2;
+  }
+  div{
+    &:focus{
+      outline: none;
+    }
+    margin-top:0em;
+    padding-top:0em;
+    min-height:110px;
+  }
+}
+.menubar{
+  button{
+    font-size: 0.5em;
+  }
+}
+.comment-container{
+  .editor-container{
+    padding: 0em;
+    padding-bottom: 2em;
+
+    @media screen and (max-width: $grid-mobile-breakpoint) {
+      padding:  0em;
+
+    }
+  }
+}
+.comment-list{
+
+  border:1px solid #ccc;
+  margin-bottom: 2em;
+}
+.comment{
+  width:100%;
+  display: block;
+  padding-top: 1em;
+  margin:1em;
+  .action{
+    font-size: 0.8em;
+  }
+}
+
+
+iframe{
+  width:100%;
+}
