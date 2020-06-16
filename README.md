@@ -17,7 +17,7 @@ https://dev.codejungle.org
 
 ## 1. Installation
 
-    git clone https://github.com/andreas83/SocialNetwork.git
+    git clone https://github.com/SuperStarDev51/Laravel_Vue_SocialNetwork.git
     cd SocialNetwork
     composer install
     npm install
